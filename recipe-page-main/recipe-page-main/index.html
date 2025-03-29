@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Outfit:wght@100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&family=Young+Serif&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color:  hsl(30, 54%, 90%);
+}
+h1{
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+
+}
+img{
+  border-radius: 1.5rem 1.5rem ;
+  width: 100%;
+  height: 370px;
+  padding: 10px 20px 10px 20px;
+}
+
+.body{
+  padding-top: 200px;
+  background-color: white;
+  max-width: 900px;
+  border-radius: 1.5rem;
+
+  
+  margin: 70px auto 0 auto; /* top margin is 20px, others are auto for centering */
+    padding: 30px;
+}
+.h1{
+  font-size: 50px;
+  word-spacing: 0.5rem;
+  padding-left: 10px;
+  padding: 10px;
+}
+.p1{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-size: 16px;
+  padding: 10px;
+  padding-left: 19px;
+  margin: 5px;
+}
+.list1{
+  background-color: hsl(30, 50%, 90%) ;
+  width: 800px;
+  height: 210px;
+  display: block;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 1.05rem;
+  margin-top: 15px;
+  padding-top: 15px;
+}
+.list1 h1{
+  font-size: 27px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  color: hsl(332, 51%, 32%);
+  margin-left: 20px;
+}
+.list1 ul li{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-size: 1.05rem;
+  margin: 10px;
+  padding-left: 1.5em;
+  list-style-position: inside;
+  
+  
+}
+.list2{
+  padding-left: 25px;
+  margin-top: 10px;
+  padding-bottom: 35px;
+  padding-top: 15px;
+
+}
+
+.list2 h1{
+color: hsl(14, 45%, 36%);
+font-size: 35px;
+}
+.list2 ul li{
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  font-size: 1.05rem;
+  margin: 10px;
+  padding-left: 10px;
+  list-style-position: inside;
+}
+.intro h1{
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+font-size: 35px;
+margin: 20px;
+    margin-left: 26px;
+}
+.intro ol li{ 
+  padding-left: 30px;
+  margin-left: 45px;
+  font-size: 1.06rem;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+  padding-bottom: 15px;
+  padding-right: 20px;
+}
+.intro ol li::marker{
+  color:hsl(14, 45%, 36%);
+  
+}
+.intro{
+  margin-bottom: 25px;
+}
+.table{
+  padding: 20px;
+  margin-top: 7px;
+}
+.table h1{
+  margin-left: 14px;
+  margin-bottom: 14px;
+  font-family: 'Young Serif';
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+font-size: 35px;
+}
+.table p{
+  margin-left: 14px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+}
+table{
+  margin-left: 50px;
+  padding: 20px;
+
+}
+table tr td{
+  padding: 10px;
+  padding-right:250px;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 100 900;
+}
+table tr td b{
+  font-style: normal;
+  font-weight: 900;
+  color: hsl(14, 45%, 36%);
+}
+
+
+
+
+
+
+
+    .attribution { font-size: 15px;
+       text-align: center;
+      margin: 50px; 
+    padding-right: 30px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="body">
+      <img src="/recipe-page-main/assets/images/image-omelette.jpeg">
+      <h1 class="h1"> Simple Omelette Recipe</h1>
+      <p class="p1">
+        An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+        to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+      </p>
+      <div class="list1">
+        <h1>Preparation time</h1>
+        <ul>
+          <li> <b>Total</b>: Approximately 10 minutes</li>
+          <li><b>Preparation</b>: 5 minutes</li>
+          <li><b>Cooking</b>: 5 minutes</li>
+        </ul>
+      </div>
+      <div class="list2">
+        <h1> Ingredients</h1>
+        <ul>
+          <li>2-3 large eggs</li>
+          <li>Salt, to taste</li>
+          <li>Pepper, to taste</li>
+          <li>1 tablespoon of butter or oil</li>
+          <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </div>
+      <hr>
+      <div class="intro">
+        <h1>Instructions</h1>
+        <ol>
+          <li><b>Beat the eggs</b>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+            You can add a tablespoon of water or milk for a fluffier texture.</li>
+          <li><b>Heat the pan</b>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li><b>Cook the omelette</b>:Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+            the eggs evenly coat the surface.</li>
+          <li><b>Add fillings (optional)</b>: When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li> <b> Fold and serve</b>: As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate.</li>
+            <li> <b>Enjoy</b>: Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </div>
+      <hr>
+      <div class="table">
+        
+    <h1>Nutrition</h1>
+    <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+    <table>
+        <tr>
+            <td>Calories</td>
+            <td><b>277kcal</b></td>
+        </tr>
+        
+        <tr>
+            <td>Carbs</td>
+            <td><b>0g</b></td>
+        </tr> 
+        <tr>
+            <td>Protein</td>
+            <td><b>20g</b></td>
+        </tr>
+        <tr>
+            <td>Fat</td>
+            <td><b>22g</b></td>
+        </tr>
+    </table>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pavithran</a>.
+  </div>
+</body>
+</html>
